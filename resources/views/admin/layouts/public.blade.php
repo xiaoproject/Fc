@@ -23,23 +23,27 @@
     @yield('orderCss')
 
     <!--[if IE 6]>
-    <script type="text/javascript"
-            src="{{asset('resources/org/hui/lib/DD_belatedPNG_0.0.8a-min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('resources/org/hui/lib/DD_belatedPNG_0.0.8a-min.js')}}"></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
     <title>@yield('title','后台')</title>
     <meta name="keywords" content="@yield('keyswords','这是关键字')">
     <meta name="description" content="@yield('description','这是描述')">
 
-    <script type="text/javascript" src="{{asset('resources/org/hui/lib/jquery/1.9.1/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('resources/org/hui/lib/layer/2.4/layer.js')}}"></script>
-    <script type="text/javascript" src="{{asset('resources/org/hui/static/h-ui/js/H-ui.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('resources/org/hui/static/h-ui.admin/js/H-ui.admin.js')}}"></script>
+
 </head>
 <body>
 
 
 @yield('content')
+
+<script type="text/javascript" src="{{asset('resources/org/hui/lib/jquery/1.9.1/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('resources/org/hui/lib/layer/2.4/layer.js')}}"></script>
+<script type="text/javascript" src="{{asset('resources/org/hui/static/h-ui/js/H-ui.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('resources/org/hui/static/h-ui.admin/js/H-ui.admin.js')}}"></script>
+
+
+@yield('business')
 
 </body>
 </html>
